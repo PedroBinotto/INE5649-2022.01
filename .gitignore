@@ -1,0 +1,6 @@
+*/bin/*
+!*/bin/.gitkeep
+*/obj/*
+!*/obj/.gitkeep
+*/latex/
+!*/latex/.gitkeep
