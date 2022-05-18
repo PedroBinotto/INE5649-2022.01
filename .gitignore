@@ -2,7 +2,7 @@
 !*/bin/.gitkeep
 */obj/*
 !*/obj/.gitkeep
-*/latex/
+*/latex/*
 !*/latex/.gitkeep
 */debug/
 */target/
