@@ -4,3 +4,10 @@
 !*/obj/.gitkeep
 */latex/
 !*/latex/.gitkeep
+*/debug/
+*/target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
