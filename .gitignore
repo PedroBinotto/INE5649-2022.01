@@ -6,6 +6,7 @@
 !*/latex/.gitkeep
 */debug/
 */target/
+*/rust/target/*
 *.class
 *.jar
 *.war
