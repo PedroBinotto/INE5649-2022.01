@@ -2,5 +2,5 @@
 
 ### TRABALHO 1
 
--   `impl ->` Implementação do código que será utilizado para gerar/analizar os dados
--   `latex ->` Diretório para arquivos temporários gerados ao compilar o código LaTeX para PDF
+-   `impl ->` Implementação do código que será utilizado para gerar/analisar os dados
+-   `latex ->` Arquivos para gerar o relatório final à partir de documento LaTeX

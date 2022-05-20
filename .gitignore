@@ -11,3 +11,8 @@
 *.war
 *.ear
 *.nar
+*.aux
+*.log
+*.blg
+*.bbl
+*.pdf
