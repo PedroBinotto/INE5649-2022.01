@@ -1,0 +1,20 @@
+#!/bin/sh
+rm rel.txt
+
+for file in bin/*; do
+    declare -a sizeList
+    sizeList=('100' '500' '1000' '1500' '2000')
+
+    for size in "${sizeList[@]}"; do
+        for n in {1..5}; do
+            printf "$(basename $file):size, " >> tmp.txt
+            { time lua $file $size; } 2>> tmp.txt 
+        done;
+    done;
+done;
+
+awk '!/real/{print}' tmp.txt >> rel.txt
+python formatter_1.py './rel.txt' './f_out.txt'
+python formatter_2.py './f_out.txt' './final.csv' 'lua'
+
+rm tmp.txt

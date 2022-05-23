@@ -1,0 +1,14 @@
+#!/bin/sh
+
+rm final.csv
+cd ./matmul/c
+./runBenchmark
+cd ../java
+./runBenchmark
+cd ../lua
+./runBenchmark
+cd ../python
+./runBenchmark
+cd ../..
+cat ./matmul/java/final.csv ./matmul/c/final.csv ./matmul/lua/final.csv ./matmul/java/final.csv >> final.csv
+

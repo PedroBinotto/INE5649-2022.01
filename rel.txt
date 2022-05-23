@@ -1,0 +1,20 @@
+*, python: can't open file '/home/pedrosb/Documents/UFSC/2022.01/INE5646/trabalho1/bin/*': [Errno 2] No such file or directory
+
+user	0m0,052s
+sys	0m0,000s
+*, python: can't open file '/home/pedrosb/Documents/UFSC/2022.01/INE5646/trabalho1/bin/*': [Errno 2] No such file or directory
+
+user	0m0,021s
+sys	0m0,003s
+*, python: can't open file '/home/pedrosb/Documents/UFSC/2022.01/INE5646/trabalho1/bin/*': [Errno 2] No such file or directory
+
+user	0m0,038s
+sys	0m0,013s
+*, python: can't open file '/home/pedrosb/Documents/UFSC/2022.01/INE5646/trabalho1/bin/*': [Errno 2] No such file or directory
+
+user	0m0,039s
+sys	0m0,013s
+*, python: can't open file '/home/pedrosb/Documents/UFSC/2022.01/INE5646/trabalho1/bin/*': [Errno 2] No such file or directory
+
+user	0m0,042s
+sys	0m0,010s

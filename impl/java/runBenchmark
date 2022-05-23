@@ -1,0 +1,26 @@
+#!/bin/sh
+rm rel.txt
+
+for file in bin/*; do
+    arrIN=(${file//./ })
+    arrOUT=(${arrIN[0]//// })
+    fileNamePretty=${arrOUT[1]} 
+
+    declare -a sizeList
+    sizeList=('100' '500' '1000' '1500' '2000')
+
+    cd bin
+    for size in "${sizeList[@]}"; do
+        for i in {1..5}; do
+            printf "$(basename $fileNamePretty):$size, " >> ../tmp.txt
+            { time java $fileNamePretty $size; } 2>> ../tmp.txt 
+        done;
+    done;
+    cd ..
+done;
+
+awk '!/real/{print}' tmp.txt >> rel.txt
+python formatter_1.py './rel.txt' './f_out.txt'
+python formatter_2.py './f_out.txt' './final.csv' 'java'
+
+rm tmp.txt
